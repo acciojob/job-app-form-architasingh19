@@ -8,37 +8,51 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="POST">
-		<label for="name">Name*</label>
-		<input type="text" name="name" id="name" required>
+	<form action="/submit-form.php" method="POST">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" required>
+			
+		  
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" required>
+			
+		  
+			<label>Gender*
+			
+			<label for="gender">Male</label>
+			<input type="radio" name="gender" id="male" value="male" required>
+		  
+			<label for="gender">Female</label>
+			<input type="radio" name="gender" id="female" value="female" required>
+			</label>
 		
-		<label for="email">Email*</label>
-		<input type="email" name="email" id="email" required>
+		  
+			<label for="laptop">Laptop Brands</label>
+			<select name="laptop" id="laptop">
+			  <option value="apple">Apple</option>
+			  <option value="asus">Asus</option>
+			  <option value="hp">HP</option>
+			</select>
+			
+		  
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" required>
+			
+		  
+			<label for="dob">DOB</label>
+			<input type="date" name="dob" id="dob" required>
+			
+		  
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" required>
+			
+		  
+			<label for="portfolio">Portfolio URL</label>
+			<input type="url" name="portfolio" id="portfolio">
 		
-		<label for="gender">Gender*</label>
-		<input type="radio" name="gender" id="gender" required>
-		<label for="gender">Male</label>
-		<input type="radio" name="gender"  required>Female
-		<label for="gender">Female</label>
-		<label for="laptop">Laptop Brands</label>
-		<select id="laptop">
-			<option disabled select>options:</option>
-			<option value="Apple">Apple</option>
-			<option value="Asue">Asue</option>
-			<option value="HP">HP</option>
-		</select>
-		<label for="age">Age*</label>
-		<input type="number" name="age" id="age" required>
-		<label for="dob">DOB*</label>
-		<input type="date" name="dob" id="dob" required>
-		<label for="password">Password*</label>
-		<input type="password" name="password" id="password" required>
-		<label for="portfolio">Portfolio</label>
-		<input type="url" id="portfolio" name="portfolio" required>
-		
-		<button value="submit" id="submit">submit</button>
-		
-	</form>
+		  
+			<button type="submit">Submit</button>
+		  </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
